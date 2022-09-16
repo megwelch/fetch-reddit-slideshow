@@ -21,9 +21,9 @@ h1 {
     display: flex;
     justify-content: center;
     border: 3px solid white;
-    height: 400px;
-    width: 400px;
-    padding: 40px;
+    height: 200px;
+    width: 200px;
+    padding: 30px 40px 30px 40px;
     border-radius: 2px;
     outline: 6px solid #00bbf0;
 }
@@ -83,5 +83,13 @@ container {
     font-family: Andale Mono, monospace;
     border-radius: 2px;
     color: #00204a;
+}
+
+#stop:hover {
+    cursor: pointer;
+}
+
+#start:hover {
+    cursor: pointer;
 }
 

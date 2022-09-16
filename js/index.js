@@ -35,7 +35,7 @@ const onGetRedditSuccess = (response) => {
         indexCounter ++
         picture.setAttribute('src', thumbnailArr[indexCounter])
     }
-    setInterval(changeSlides, 5000)
+    setInterval(changeSlides, 3000)
 }
 
 
@@ -47,7 +47,11 @@ startButton.addEventListener('click', () => {
         return
     }
 
-    console.log(inputValue)
+    
+    if (frame.firstChild) {
+        frame.removeChild(frame.firstChild);
+    }
+
     fetch(`http://www.reddit.com/search.json?q=${inputValue}+nsfw:no`)
 
     .then(res => (res.json()))
